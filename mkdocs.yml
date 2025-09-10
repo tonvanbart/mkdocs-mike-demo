@@ -1,0 +1,46 @@
+site_name: Hello, Documentation!
+site_author: tonvanbart
+site_description: Documentation for the Hello project
+
+site_dir: _site
+theme:
+  name: material
+  features:
+    - content.code.copy
+
+plugins:
+  - search
+  - include-markdown:
+      encoding: ascii
+      preserve_includer_indent: true
+      dedent: true
+      trailing_newlines: true
+      comments: false
+      rewrite_relative_urls: true
+      heading_offset: 0
+      recursive: true
+  - autorefs:
+      resolve_closest: true
+  - mike:
+      version_selector: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["docs"]
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+extra_css:
+#  - stylesheets/extra.css
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - Home: index.md

@@ -15,3 +15,6 @@ buildNumber.properties
 # IDEA
 *.iml
 .idea/
+
+# python venv (use pip install -r requirements.txt to set up your venv)
+venv/
