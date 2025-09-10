@@ -15,7 +15,7 @@ The moving parts:
 1. Clone the repo 
 2. Set up a Python venv for local website testing:
    ```shell
-    python3 -m venv venv
+   python3 -m venv venv
    . ./venv/bin/activate    # for bash
    python3 -m pip install -r requirements.txt
    ```
