@@ -34,7 +34,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
 
-extra_css:
+#extra_css:
 #  - stylesheets/extra.css
 
 extra:
