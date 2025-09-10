@@ -8,6 +8,8 @@ When run, the project should emit a friendly greeting:
  Hello, World!
 ```
 
+The main class also has some logging.
+
 This sums up the total functionality.
 
 Copyleft &copy; 2025
