@@ -21,7 +21,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: 'maven'
-#      - name: Set up Maven
+#      - name: Set up Maven version (optional)
 #        uses: stCarolas/setup-maven@v5
 #        with:
 #          maven-version: 3.9.6
@@ -34,10 +34,8 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install mike
-      - name: Install include plugin
-        run: pip install mkdocs-include-markdown-plugin
-      - name: Install autorefs plugin
-        run: pip install mkdocs-autorefs
+          pip install mkdocs-include-markdown-plugin
+          pip install mkdocs-autorefs
       - name: Setup Docs Deploy
         run: |
           git config --global user.name "deploy SNAPSHOT docs"
