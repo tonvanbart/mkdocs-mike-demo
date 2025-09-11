@@ -44,4 +44,3 @@ jobs:
         id: deployment
         run: |
           mike deploy --push --update-aliases ${{ steps.maven-version.outputs.version }}
-          mike set-default ${{ steps.maven-version.outputs.version }} --push
