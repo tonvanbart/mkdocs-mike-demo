@@ -37,4 +37,5 @@ jobs:
         id: deployment
         run: |
           mike deploy --push --update-aliases ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
-          mike set-default ${{ github.event.release.tag_name || github.event.inputs.tag_name }} --push
+          mike set-default --push ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
+          mike alias --push --update-aliases ${{ github.event.release.tag_name || github.event.inputs.tag_name }} latest

@@ -8,6 +8,8 @@ When run, the project should emit a friendly greeting:
  Hello, World!
 ```
 
+It is now also possible to pass a name argument, and have that name greeted.
+
 The main class also has some logging.
 
 This sums up the total functionality.
