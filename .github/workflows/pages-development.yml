@@ -46,5 +46,4 @@ jobs:
       - name: Build Docs Site
         id: deployment
         run: |
-#          mike deploy --push --update-aliases ${{ steps.maven-version.outputs.version }}
           mike deploy --push --update-aliases SNAPSHOT-DEVELOPMENT
